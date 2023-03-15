@@ -7,6 +7,13 @@ body {
   color: red;
 }
 
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #f7f7f7;
   /* padding: 20px;
@@ -14,11 +21,12 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 article {
   margin-bottom: 60px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .post-header {
@@ -33,6 +41,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
+  width: 500px;
 }
 
 h1,
@@ -164,6 +173,11 @@ a:hover {
 a:active {
   background-color: rgb(47, 235, 213);
   font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 /* Resolving conflicts */
