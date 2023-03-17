@@ -1,0 +1,46 @@
+.article {
+  border: 5px solid;
+}
+
+.title {
+  text-align: center;
+  background-color: rgba(68, 68, 68, 0.047);
+}
+
+.price {
+  font-size: 25px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.slogan {
+  color: grey;
+  font-size: 14px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.cart {
+  font-size: 20px;
+  border-style: none;
+  color: white;
+  background-color: black;
+}
+
+.cart:hover {
+  background-color: white;
+  color: black;
+}
