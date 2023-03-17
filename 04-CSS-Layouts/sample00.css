@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 /* Product information */
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
@@ -33,6 +35,8 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 15px;
+  float: right;
+  margin-top: 8px;
 }
 
 .more-info:link,
@@ -51,7 +55,6 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 25px;
 }
 .details-list {
   list-style: square;
@@ -89,7 +92,6 @@ article::before {
   left: -35px;
   background-color: red;
   color: white;
-  /* display: inline-block; */
   letter-spacing: 2px;
   font-weight: bold;
   padding: 5px 15px;
@@ -118,10 +120,43 @@ article::before {
 .select-color div:nth-child(4) {
   background-color: yellow;
 }
-
 .select-color div:nth-child(5) {
   background-color: greenyellow;
 }
 .select-color div:last-child {
   background-color: brown;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.product-info {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  /* padding: 20px; */
+  margin-top: 20px;
+}
+
+.product-details {
+  width: 243px;
+  float: left;
+  margin-top: 20px;
+}
+
+.container {
+  /* background-color: red; */
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
