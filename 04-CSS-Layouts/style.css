@@ -320,7 +320,8 @@ footer {
   display: block;
 }
 
-.row {
+/* FLEXBOX LAYOUT */
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
@@ -334,4 +335,25 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+  align-self: start;
+}
+
+footer {
+  grid-column: 1 / -1;
 }

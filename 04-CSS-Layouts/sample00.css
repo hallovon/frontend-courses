@@ -26,7 +26,6 @@ body {
 /* Product information */
 .price {
   font-size: 24px;
-  float: left;
 }
 
 .shipping {
@@ -34,9 +33,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 15px;
-  float: right;
-  margin-top: 8px;
 }
 
 .more-info:link,
@@ -97,37 +93,33 @@ article::before {
   padding: 5px 15px;
 }
 
-.select-color {
-  margin-bottom: 0;
+.product-colors {
+  display: flex;
+  gap: 10px;
 }
 
-.select-color div {
-  display: inline-block;
-  margin-right: 10px;
-  height: 25px;
-  width: 25px;
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
 }
-
-.select-color div:first-child {
-  background-color: black;
-}
-.select-color div:nth-child(2) {
+.color-blue {
   background-color: blue;
 }
-.select-color div:nth-child(3) {
+.color-red {
   background-color: red;
 }
-.select-color div:nth-child(4) {
+.color-yellow {
   background-color: yellow;
 }
-.select-color div:nth-child(5) {
-  background-color: greenyellow;
+.color-green {
+  background-color: green;
 }
-.select-color div:last-child {
+.color-brown {
   background-color: brown;
 }
 
-.product-description {
+/* .product-description {
   clear: both;
   margin-bottom: 10px;
 }
@@ -141,7 +133,6 @@ article::before {
   width: 243px;
   float: left;
   margin-right: 40px;
-  /* padding: 20px; */
   margin-top: 20px;
 }
 
@@ -152,11 +143,70 @@ article::before {
 }
 
 .container {
-  /* background-color: red; */
 }
 
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
+} */
+
+/* .container {
+  display: flex;
+  gap: 40px;
+}
+
+.product-info {
+  margin-top: 20px;
+  flex: 1;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  margin-bottom: 20px;
+}
+
+.product-details {
+  margin-top: 20px;
+  flex: 1;
+} */
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+h2 {
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+}
+
+button {
+  grid-column: 1 / -1;
+}
+
+.product-details {
+  margin-top: 20px;
+}
+
+.product-info {
+  margin-top: 20px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  margin-bottom: 10px;
 }
