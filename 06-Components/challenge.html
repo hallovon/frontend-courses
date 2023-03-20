@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Challenge</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .container {
+        height: 100px;
+        width: 650px;
+        padding: 20px 40px;
+        margin: 100px auto;
+        font-size: 22px;
+        font-weight: 500;
+        position: relative;
+
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .index {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+      }
+
+      .index--filled {
+        background-color: #087f5b;
+        color: #fff;
+      }
+
+      .btn {
+        width: 48px;
+        height: 48px;
+        background-color: #fff;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn--left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .btn--right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+
+        stroke: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="index">1</div>
+      <div class="index">2</div>
+      <div class="index index--filled">3</div>
+      <div class="index">4</div>
+      <div class="index">5</div>
+      <div class="index">6</div>
+      <div class="index">...</div>
+      <div class="index">23</div>
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
