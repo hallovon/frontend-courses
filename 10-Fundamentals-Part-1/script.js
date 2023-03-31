@@ -35,15 +35,22 @@
 //   console.log("height is UNDEFINED");
 // }
 
-const age = 18;
-if (age === "18") {
-  console.log("You just become an adult");
-}
+// const age = 18;
+// if (age === "18") {
+//   console.log("You just become an adult");
+// }
 
-if (age == "18") {
-  console.log("You just become an adult");
-}
+// if (age == "18") {
+//   console.log("You just become an adult");
+// }
 
-const favorite = Number(prompt("What's your favorite number?"));
-console.log(favorite);
-console.log(typeof favorite);
+// const favorite = Number(prompt("What's your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
+
+const hasDriverLicense = true; 
+const hasGoodVision = true;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
