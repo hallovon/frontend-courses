@@ -48,9 +48,21 @@
 // console.log(favorite);
 // console.log(typeof favorite);
 
-const hasDriverLicense = true; 
-const hasGoodVision = true;
+// const hasDriverLicense = true;
+// const hasGoodVision = true;
 
-console.log(hasDriverLicense && hasGoodVision);
-console.log(hasDriverLicense || hasGoodVision);
-console.log(!hasDriverLicense);
+// console.log(hasDriverLicense && hasGoodVision);
+// console.log(hasDriverLicense || hasGoodVision);
+// console.log(!hasDriverLicense);
+
+const day = "monday";
+switch (day) {
+  case "monday":
+    console.log("today is monday");
+    break;
+  case "tuesday":
+    console.log("today is tuesday");
+    break;
+  default:
+    console.log("Not a valid day");
+}
